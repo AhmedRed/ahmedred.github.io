@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+img {
+height: 224px;
+width: 400px;
+object-fit: contain;
+}
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+a {
+ color: #741c7c;
+ font-weight: 500;
+ -webkit-transition: -webkit-transform 0.2s;
+ transition: transform 0.2s;
+ display: inline-block;
+ text-decoration: none;
+ position: relative;
+ }
+ a:hover {
+ -webkit-transform: scale(0.9);
+ transform: scale(0.9);
+ }
+ a::before {
+ position: absolute;
+ top: -2px;
+ left: -7px;
+ box-sizing: content-box;
+ padding: 0 5px;
+ width: 100%;
+ height: 100%;
+ border: 2px solid #741c7c;
+ content: '';
+ opacity: 0;
+ -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
+ transition: opacity 0.2s, transform 0.2s;
+ -webkit-transform: scale(0.9);
+ transform: scale(0.9);
+ }
+ a:hover::before {
+ opacity: 1;
+ -webkit-transform: scale(1.2);
+ transform: scale(1.2);
+ }
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>~Humble Beginnings~</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Picking things up!</h2>
+      <h5>July 27, 2020</h5>
+      <img src="https://scontent.flhe6-1.fna.fbcdn.net/v/t1.0-9/17952868_10212527310155021_8469544813079421351_n.jpg?_nc_cat=107&_nc_sid=05277f&_nc_ohc=2e-ATLQ32PoAX-4xDIN&_nc_ht=scontent.flhe6-1.fna&oh=d491874423057011790179998b23db3a&oe=5F45EC64" />
+      <p>A bit more about me</p>
+      <p>I'm Muhammad Ahmed, a seasoned graduate software engineer with more than 7 years of professional development experience. I have been working mostly on enterprise applications with technologies that revolve around Java programming language and my current role is of senior software engineer at Seamless Distributions, Sweden.
+In my professional journey I have worked both remotely i.e. via CrossOver and on site in Pakistan as well as in United Kingdom at PCMSGroup ltd. During this time I have rendered my services in making of what I call one of the most beautiful architectures responsible for millions of transaction on day to day basis in retail sector as well as in telecom sector.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="https://scontent.flhe6-1.fna.fbcdn.net/v/t31.0-8/26678549_10215018439191690_1502138744493849901_o.jpg?_nc_cat=102&_nc_sid=7aed08&_nc_ohc=dZ69eBHLzjkAX9_d5_f&_nc_ht=scontent.flhe6-1.fna&oh=822d7847d674f291ab558ce8f9bb2321&oe=5F4310B9" style="height:204.6px;width:136.7px"/>
+      <p>Muhammad Ahmed.</p> <p>Senior Software Engineer at Seamless Distributions, Sweden.</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div><a href="https://ahmedred.github.io">Picking things up!</a></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p><a href="https://www.facebook.com/ahmed.r3d">Facebook</a></p>
+      <p><a href="https://www.linkedin.com/in/muhammad-ahmed-ab1a9a52/">Linkedin</a></p>
+      <p><a href="https://twitter.com/ahmedredy/">Twitter</a></p>
+      <p><a href="https://www.instagram.com/iamahmed.ghumman/">Instagram</a></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h3>All good (and at times even bad) things must come to an end!</h3>
+</div>
+
+</body>
+</html>
