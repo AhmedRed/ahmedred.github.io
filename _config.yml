@@ -1,96 +1,210 @@
-### Site Settings ###
-title               : portfolYOU
-description         : >-
-                      I turn coffee :coffee: into code,
-                      use tabs over spaces
-                      and never broke production.
-baseurl             : "/portfolYOU"                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
-repository          : YoussefRaafatNasry/portfolYOU     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-remote_theme        : YoussefRaafatNasry/portfolYOU
+# Site
+repository: ahmedred/ahmedred.github.io
+favicon: images/favicon.ico
 
+# Content configuration version
+version: 2
 
-### Plugins ###
+# Personal info
+name: Muhammad Ahmed
+title: Senior Software Engineer
+email: ahmed.se.pk@gmail.com
+website: https://ahmedred.github.io
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+github_username: ahmedred
+linkedin_username: muhammad-ahmed-ab1a9a52
+# Additional icon links
+additional_links:
+- title: Email
+  icon: fas fa-envelope
+  url: mailto:ahmed.se.pk@gmail.com
+- title: Phone
+  icon: fas fa-phone
+  url: tel:+4915226936587
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+about_profile_image: images/profile.jpg
+about_content: |
+  I'm a software engineer passionate about building systems that are fast, reliable, and scalable. My journey has taken me through backend development, microservices, mobile, and enterprise applications — and today my focus is on cloud-native architectures, low-latency systems, and highly available platforms.
+
+  Currently working with Go and keeping myself happy through Rust, I enjoy designing infrastructure that performs at scale while staying resilient under pressure. What drives me most is curiosity, problem-solving, and good conversations.
+
+content:
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: Delivery Hero
+        link: https://www.deliveryhero.com
+        sub_title: Senior Software Engineer
+        caption: November 2022 - Present (2 years 11 months)
+        quote: >
+          Backend Developer for Quick Commerce - Building scalable microservices for one of the world's leading delivery platforms
+        description: |
+          Working on microservices architecture using Go/Rust and Java/Kotlin to power quick commerce solutions. 
+          Responsible for designing and implementing scalable backend systems that handle high-volume transactions.
+          
+          **Skills:** Docker, Data Modeling/Airflow, Ktor, K8s, Terraform, Go/Rust, Java/Kotlin, Google Cloud Platform (GCP), Agile, Scrum, RedisCloud
+
+      - layout: left
+        title: Seamless Distribution Systems AB
+        link: https://www.seamless.se
+        sub_title: Senior Software Engineer
+        caption: July 2019 - September 2022 (3 years 3 months)
+        quote: >
+          ERS 360° - End-to-end lifecycle management of recharge vouchers from product creation to PIN generation and redemption
+        description: |
+          Worked on ERS 360°, a comprehensive product suite that equips service providers to manage their entire supply chain and distribution needs electronically.
+          
+          **Roles & Responsibilities:**
+          • Working in an onsite/distributed model yet in a purely agile manner
+          • Responsible for analyzing, designing and implementing software requirements including maintenance and new feature development
+          • Supporting team with technology R&D, trainings, code reviews and problem solving
+          
+          **Tools & Technologies:**
+          • Java SE 7/8, JS, CSS, Spring/Spring Boot, Apache CXF, JUnit, Mockito, Selenium
+          • MariaDB, MySQL
+          • IntelliJ, Apache Maven, Bitbucket, JIRA, Confluence, Bamboo, HAProxy, HikariCP, ActiveMQ, Tomcat 7.0
+
+      - layout: left
+        title: Harry's Cafe
+        sub_title: Chief Executive Officer
+        caption: June 2019 - August 2021 (2 years 3 months)
+        quote: >
+          Co-Founder and CEO of a continental food restaurant covering burgers, wraps, sandwiches and various appetizers
+        description: |
+          Involved in all stages of restaurant development from area selection to theme, menu selection and resources management.
+          Currently oversee HR operations, budgeting and policies formulation for day-to-day activities.
+
+      - layout: left
+        title: Upland PowerSteering
+        sub_title: Software Developer
+        caption: June 2018 - July 2019 (1 year 2 months)
+        quote: >
+          Enterprise web applications and integration solutions for third party applications
+        description: |
+          Worked on enterprise web applications and related integration solutions for third party applications.
+          Responsible for implementing client requirements in existing applications and maintaining application quality through bug fixes and improvements.
+          
+          **Technologies:** Java SE7/8, Maven, AngularJS, Spring, Apache Tapestry, Tomcat, Resin, Dell Boomi
+
+      - layout: left
+        title: Uworx (PCMS Group, UK)
+        sub_title: Senior Software Engineer
+        caption: June 2014 - July 2018 (4 years 2 months)
+        quote: >
+          Enterprise applications development with focus on Test Driven Development and Continuous Integration
+        description: |
+          Worked on enterprise applications using Java EE, Spring Framework, Android, and Struts 2.
+          Focused on feature development and improvement while following agile methodologies with emphasis on Test Driven Development and Continuous Integration.
+
+      - layout: left
+        title: Virtism (Mobilezapp, Texas, USA)
+        sub_title: Software Engineer
+        caption: July 2012 - March 2014 (1 year 9 months)
+        quote: >
+          Android Application Development, Web Designer/Developer and Server Side Management
+        description: |
+          Android Application Development, Web Designer/Developer and Server Side Management including web services and database management.
+
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: FAST-NU
+        caption: 2009 - 2013
+        sub_title: Bachelor of Science (BS), Computer Science
+        quote: >
+          Computer Science education with focus on software engineering and system design
+        description: |
+          Comprehensive computer science education covering algorithms, data structures, software engineering principles, and system design.
+          Gained strong foundation in programming languages, database systems, and software development methodologies.
+
+      - layout: left
+        title: Punjab College Faisalabad
+        caption: 2007 - 2009
+        sub_title: Intermediate, FSc (Maths)
+        quote: >
+          Pre-engineering studies with focus on mathematics and science
+        description: |
+          Completed intermediate studies in mathematics and science, providing strong analytical foundation for computer science studies.
+
+  - title: Leadership & Activities
+    layout: list
+    content:
+      - layout: left
+        title: ACM (Association for Computing Machinery)
+        sub_title: Vice President
+        caption: December 2010 - August 2011 (9 months)
+        quote: >
+          Organized courses for students and managed national/international competitions
+        description: |
+          Led student organization activities, organized educational courses, and managed national and international programming competitions.
+
+      - layout: left
+        title: Voice
+        sub_title: General Secretary
+        caption: August 2009 - August 2011 (2 years 1 month)
+        quote: >
+          Managed debating events, selected teams and participated in various competitions
+        description: |
+          Organized and managed debating events, selected teams for competitions, and actively participated in various debating competitions.
+
+  - title: Skills & Certifications
+    layout: text
+    content: |
+      **Technical Skills:**
+      - **Programming Languages:** Java, Kotlin, JavaScript, CSS
+      - **Frameworks & Technologies:** Spring/Spring Boot, Ktor, Apache CXF, AngularJS, Struts 2
+      - **Cloud & DevOps:** Google Cloud Platform (GCP), Docker, Kubernetes, Terraform
+      - **Databases:** MariaDB, MySQL
+      - **Tools & Platforms:** IntelliJ, Apache Maven, Bitbucket, JIRA, Confluence, Bamboo, HAProxy, HikariCP, ActiveMQ, Tomcat
+      - **Methodologies:** Scrum, Agile, Test Driven Development, Continuous Integration
+      
+      **Certifications:**
+      - Java Basic Certification
+      - Advanced MicroServices: Tactical
+      
+      **Languages:**
+      - English (Full Professional)
+      - Urdu (Native or Bilingual)
+      - Punjabi (Native or Bilingual)
+      
+      **Honors & Awards:**
+      - Web-Dev Hackathon
+      - Ace of Initiative Award
+
+  - title: A Little More About Me
+    layout: text
+    content: |
+      Alongside my passion for software engineering and system architecture, some of my other interests include:
+      - Exploring new technologies and programming languages
+      - Scaling systems and optimizing performance
+      - Mentoring and knowledge sharing with development teams
+      - Coffee conversations about technology and innovation
+      - Continuous learning and professional development
+      
+      I believe in the power of technology to solve real-world problems and am always excited to work on challenging projects that make a difference.
+
+# Footer
+footer_show_references: true
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
 plugins:
-  - jemoji
-
-
-### Navbar Settings ###
-nav_exclude:                                            # The following paths are excluded from navbar
-  - pages/tags.html
-  - pages/404.html
-  - pages/index.md
-  - documentation/partials/**                           # For Documentation Only
-
-
-### Author Info ###
-author:
-  name              : John Doe
-  image             : https://i.imgur.com/uyDNQnn.jpg
-  behance           : your_username
-# dribbble          : your_username
-  email             : username@domain.com
-  facebook          : your_username
-  github            : your_username
-# gitlab            : your_username
-# instagram         : your_username
-# kaggle            : your_username
-  linkedin          : your_username
-  medium            : your_username
-# soundcloud        : your_username
-# spotify           : your_username
-# stackoverflow     : your_user_id
-# tumblr            : your_username.tumblr.com
-# twitch            : your_username
-  twitter           : your_username
-# vimeo             : your_username
-# youtube           : your_channel_name
-
-
-### Posts ###
-permalink: /blog/:title
-
-
-### Collections ###
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name
-  elements:                                             # For Documentation Only
-    output: true                                        # For Documentation Only
-
-
-### Disqus ###
-disqus: your-short-name-disqus                          # Your website Shortname on disqus
-
-
-### Analytics ###
-analytics:
-  enabled: false                                        # Set true to enable analytics
-  google:
-    tracking_id: your-google-tracking-id
-
-
-### Defaults for collections ###
-defaults:
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "page"
-  - scope:                                              # For Documentation Only
-      path: ""                                          # For Documentation Only
-      type: "elements"                                  # For Documentation Only
-    values:                                             # For Documentation Only
-      layout: "element"                                 # For Documentation Only
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      comments: false                                   # Set to true to enable disqus comments
-
-### Exclude from processing ###
-exclude:
-  - README.md
-  - CONTRIBUTING.md
-  - LICENSE
-  - "*.log"
+ - jekyll-seo-tag
